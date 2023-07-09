@@ -1,49 +1,187 @@
-import "./App.css";
+import Menu from "./components/Menu";
+
+import "./assets/css/App.css";
+import Button from "./components/Button";
 
 function App() {
   return (
-    <>
-      <div className="welcome">
-        <div className="welcome-text">
-          <h1>
-            Welcome to
-            <a href="https://devchallenges.io/" target="_blank">
-              devchallenges.io
-            </a>
-          </h1>
+    <div className="container">
+      <Menu />
 
-          <p>
-            If you have any questions, don't hesitate to ask on Discord. Here
-            are 7 general steps to complete the challenge:
-          </p>
+      <section className="section__button">
+        <h1 className="section__button__title">Buttons</h1>
+
+        <div className="section__button__container">
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">{"<Button />"}</span>
+              <Button text="Default" className="btn-default" />
+            </div>
+            <div>
+              <span className="container__buttons__span-color">
+                &:hover, &:focus
+              </span>
+              <Button text="Default" className="btn-default-hover" />
+            </div>
+          </div>
+
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button variant=”outline” />"}
+              </span>
+              <Button text="Default" className="btn-outline" />
+            </div>
+            <div>
+              <span className="container__buttons__span-color">
+                &:hover, &:focus
+              </span>
+              <Button text="Default" className="btn-outline-hover" />
+            </div>
+          </div>
+
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button variant=”text” />"}
+              </span>
+              <Button text="Default" className="btn-variant-text" />
+            </div>
+            <div>
+              <span className="container__buttons__span-color">
+                &:hover, &:focus
+              </span>
+              <Button text="Default" className="btn-variant-text-hover" />
+            </div>
+          </div>
+
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button disableShadow />"}
+              </span>
+              <Button text="Default" className="btn-disableShadow" />
+            </div>
+          </div>
+
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button disabled />"}
+              </span>
+              <Button text="Default" className="btn-disabled" />
+            </div>
+            <div>
+              <span className="container__buttons__span">
+                {"<Button variant=”text” disabled />"}
+              </span>
+              <Button text="Default" className="btn-disabled-text" />
+            </div>
+          </div>
+
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button startIcon=”local_grocery_store” />"}
+              </span>
+
+              <Button text="Default" iconLeft={true} className="btn-icon" />
+            </div>
+            <div>
+              <span className="container__buttons__span">
+                {"<Button endIcon=”local_grocery_store” />"}
+              </span>
+              <Button text="Default" iconRight={true} className="btn-icon" />
+            </div>
+          </div>
+
+          <div className="container__buttons btn-size-three">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button size=”sm” />"}
+              </span>
+              <Button text="Default" className="btn-icon size-sm" />
+            </div>
+            <div>
+              <span className="container__buttons__span">
+                {"<Button size=”md” />"}
+              </span>
+              <Button text="Default" className="btn-icon size-md" />
+            </div>
+            <div>
+              <span className="container__buttons__span">
+                {"<Button size=”lg” />"}
+              </span>
+              <Button text="Default" className="btn-icon size-lg" />
+            </div>
+          </div>
+
+          <div className="container__buttons btn-size-four">
+            <div>
+              <div>
+                <span className="container__buttons__span">
+                  {"<Button color=”default” />"}
+                </span>
+                <Button text="Default" className="btn-default" />
+              </div>
+              <div>
+                <span className="container__buttons__span-color">
+                  &:hover, &:focus
+                </span>
+                <Button text="Default" className="btn-default-hover" />
+              </div>
+            </div>
+
+            <div className="container__buttons">
+              <div>
+                <span className="container__buttons__span">
+                  {"<Button color=”primary” />"}
+                </span>
+                <Button text="Default" className="btn-icon" />
+              </div>
+              <div>
+                <Button text="Default" className="btn-icon btn-icon-hover" />
+              </div>
+            </div>
+
+            <div className="container__buttons">
+              <div>
+                <span className="container__buttons__span">
+                  {"<Button color=”secondary” />"}
+                </span>
+                <Button text="Secondary" className="btn-secondary" />
+              </div>
+              <div>
+                <Button text="Secondary" className="btn-secondary-hover" />
+              </div>
+            </div>
+
+            <div className="container__buttons">
+              <div>
+                <span className="container__buttons__span">
+                  {"<Button color=”danger” />"}
+                </span>
+                <Button text="Default" className="btn-danger" />
+              </div>
+              <div>
+                <Button text="Default" className="btn-danger-hover" />
+              </div>
+            </div>
+          </div>
         </div>
 
-        <ul>
-          <li>
-            <b>Step 1:</b> Create a new repository on github
-          </li>
-          <li>
-            <b>Step 2:</b> Copy resources, README.md to your repository
-          </li>
-          <li>
-            <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-          </li>
-          <li>
-            <b>Step 4:</b> Complete all user stories
-          </li>
-          <li>
-            <b>Step 5:</b> Update README.md
-          </li>
-          <li>
-            <b>Step 6:</b> Deploy your app and submit your solution
-          </li>
-          <li>
-            <b>Step 7:</b> Share your solution on Discord, Twitter and other
-            platforms to ask for feedback
-          </li>
-        </ul>
-      </div>
-    </>
+        <div className="footer">
+          <p className="footer__text">
+            Icons: https://material.io/resources/icons/?style=round
+          </p>
+          <p className="footer__subtext">
+            created by{" "}
+            <span className="footer__subtext-span">Rubén Vásquez</span> -
+            devChallenges.io
+          </p>
+        </div>
+      </section>
+    </div>
   );
 }
 
