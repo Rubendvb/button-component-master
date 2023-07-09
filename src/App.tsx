@@ -1,131 +1,184 @@
 import Menu from "./components/Menu";
 
 import "./assets/css/App.css";
+import Button from "./components/Button";
 
 function App() {
   return (
     <div className="container">
       <Menu />
 
-      <section>
-        <h1>Buttons</h1>
+      <section className="section__button">
+        <h1 className="section__button__title">Buttons</h1>
 
-        <div>
-          <div>
-            <span>{"<Button />"}</span>
-            <button>Default</button>
+        <div className="section__button__container">
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">{"<Button />"}</span>
+              <Button text="Default" className="btn-default" />
+            </div>
+            <div>
+              <span className="container__buttons__span-color">
+                &:hover, &:focus
+              </span>
+              <Button text="Default" className="btn-default-hover" />
+            </div>
           </div>
-          <div>
-            <span>&:hover, &:focus</span>
-            <button>Default</button>
+
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button variant=”outline” />"}
+              </span>
+              <Button text="Default" className="btn-outline" />
+            </div>
+            <div>
+              <span className="container__buttons__span-color">
+                &:hover, &:focus
+              </span>
+              <Button text="Default" className="btn-outline-hover" />
+            </div>
+          </div>
+
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button variant=”text” />"}
+              </span>
+              <Button text="Default" className="btn-variant-text" />
+            </div>
+            <div>
+              <span className="container__buttons__span-color">
+                &:hover, &:focus
+              </span>
+              <Button text="Default" className="btn-variant-text-hover" />
+            </div>
+          </div>
+
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button disableShadow />"}
+              </span>
+              <Button text="Default" className="btn-disableShadow" />
+            </div>
+          </div>
+
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button disabled />"}
+              </span>
+              <Button text="Default" className="btn-disabled" />
+            </div>
+            <div>
+              <span className="container__buttons__span">
+                {"<Button variant=”text” disabled />"}
+              </span>
+              <Button text="Default" className="btn-disabled-text" />
+            </div>
+          </div>
+
+          <div className="container__buttons">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button startIcon=”local_grocery_store” />"}
+              </span>
+
+              <Button text="Default" iconLeft={true} className="btn-icon" />
+            </div>
+            <div>
+              <span className="container__buttons__span">
+                {"<Button endIcon=”local_grocery_store” />"}
+              </span>
+              <Button text="Default" iconRight={true} className="btn-icon" />
+            </div>
+          </div>
+
+          <div className="container__buttons btn-size-three">
+            <div>
+              <span className="container__buttons__span">
+                {"<Button size=”sm” />"}
+              </span>
+              <Button text="Default" className="btn-icon size-sm" />
+            </div>
+            <div>
+              <span className="container__buttons__span">
+                {"<Button size=”md” />"}
+              </span>
+              <Button text="Default" className="btn-icon size-md" />
+            </div>
+            <div>
+              <span className="container__buttons__span">
+                {"<Button size=”lg” />"}
+              </span>
+              <Button text="Default" className="btn-icon size-lg" />
+            </div>
+          </div>
+
+          <div className="container__buttons btn-size-four">
+            <div>
+              <div>
+                <span className="container__buttons__span">
+                  {"<Button color=”default” />"}
+                </span>
+                <Button text="Default" className="btn-default" />
+              </div>
+              <div>
+                <span className="container__buttons__span-color">
+                  &:hover, &:focus
+                </span>
+                <Button text="Default" className="btn-default-hover" />
+              </div>
+            </div>
+
+            <div className="container__buttons">
+              <div>
+                <span className="container__buttons__span">
+                  {"<Button color=”primary” />"}
+                </span>
+                <Button text="Default" className="btn-icon" />
+              </div>
+              <div>
+                <Button text="Default" className="btn-icon btn-icon-hover" />
+              </div>
+            </div>
+
+            <div className="container__buttons">
+              <div>
+                <span className="container__buttons__span">
+                  {"<Button color=”secondary” />"}
+                </span>
+                <Button text="Secondary" className="btn-secondary" />
+              </div>
+              <div>
+                <Button text="Secondary" className="btn-secondary-hover" />
+              </div>
+            </div>
+
+            <div className="container__buttons">
+              <div>
+                <span className="container__buttons__span">
+                  {"<Button color=”danger” />"}
+                </span>
+                <Button text="Default" className="btn-danger" />
+              </div>
+              <div>
+                <Button text="Default" className="btn-danger-hover" />
+              </div>
+            </div>
           </div>
         </div>
 
-        <div>
-          <div>
-            <span>{"<Button variant=”outline” />"}</span>
-            <button>Default</button>
-          </div>
-          <div>
-            <span>&:hover, &:focus</span>
-            <button>Default</button>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <span>{"<Button variant=”text” />"}</span>
-            <button>Default</button>
-          </div>
-          <div>
-            <span>&:hover, &:focus</span>
-            <button>Default</button>
-          </div>
-        </div>
-
-        <div>
-          <span>{"<Button disableShadow />"}</span>
-          <button>Default</button>
-        </div>
-
-        <div>
-          <div>
-            <span>{"<Button disabled />"}</span>
-            <button>Default</button>
-          </div>
-          <div>
-            <span>{"<Button variant=”text” disabled />"}</span>
-            <button>Default</button>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <span>{"<Button startIcon=”local_grocery_store” />"}</span>
-            <button>Default</button>
-          </div>
-          <div>
-            <span>{"<Button endIcon=”local_grocery_store” />"}</span>
-            <button>Default</button>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <span>{"<Button size=”sm” />"}</span>
-            <button>Default</button>
-          </div>
-          <div>
-            <span>{"<Button size=”md” />"}</span>
-            <button>Default</button>
-          </div>
-          <div>
-            <span>{"<Button size=”lg” />"}</span>
-            <button>Default</button>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <div>
-              <span>{"<Button color=”default” />"}</span>
-              <button>Default</button>
-            </div>
-            <div>
-              <span>{"&:hover, &:focus"}</span>
-              <button>Default</button>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <span>{"<Button color=”primary” />"}</span>
-              <button>Default</button>
-            </div>
-            <div>
-              <button>Default</button>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <span>{"<Button color=”secondary” />"}</span>
-              <button>Default</button>
-            </div>
-            <div>
-              <button>Default</button>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <span>{"<Button color=”danger” />"}</span>
-              <button>Default</button>
-            </div>
-            <div>
-              <button>Default</button>
-            </div>
-          </div>
+        <div className="footer">
+          <p className="footer__text">
+            Icons: https://material.io/resources/icons/?style=round
+          </p>
+          <p className="footer__subtext">
+            created by{" "}
+            <span className="footer__subtext-span">Rubén Vásquez</span> -
+            devChallenges.io
+          </p>
         </div>
       </section>
     </div>

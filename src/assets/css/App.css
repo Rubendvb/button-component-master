@@ -1,10 +1,93 @@
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-ubuntu: "Ubuntu Mono", monospace;
+  --font-noto: "Noto Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --portland-orange: #f7542e;
+  --ghost-white: #fafbfd;
+  --spanish-gray: #9e9e9e;
+  --cetacean-blue: #090f31;
+  --dark-charcoal: #333333;
+  --black-olive: #3f3f3f;
+}
+
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .container {
   display: flex;
+}
+
+.section__button {
+  padding: 3rem 0 0 5rem;
+}
+
+.section__button__title {
+  color: #4f4f4f;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  line-height: normal;
+  font-size: 1.5rem;
+  margin: 0 0 1.75rem;
+}
+
+.section__button__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.container__buttons div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.container__buttons__span,
+.container__buttons__span-color {
+  margin-bottom: 1rem;
+  color: var(--dark-charcoal);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: var(--font-ubuntu);
+  line-height: normal;
+}
+
+.container__buttons__span-color {
+  color: #828282;
+}
+
+.footer {
+  margin: 3.25rem 0;
+}
+
+.footer__text {
+  font-family: var(--font-ubuntu);
+  color: #828282;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 0.75rem;
+}
+
+.footer__subtext {
+  margin-top: 2.12rem;
+  color: #a9a9a9;
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  line-height: normal;
+  font-size: 0.875rem;
+}
+
+.footer__subtext-span {
+  font-weight: bold;
+  text-decoration: underline;
 }

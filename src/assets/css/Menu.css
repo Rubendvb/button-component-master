@@ -1,13 +1,12 @@
 .menu {
-  border: 1px solid red;
   width: 100%;
   max-width: 14rem;
   padding: 2.3rem 0 0 3rem;
-  background-color: #fafbfd;
-  height: 100vh;
+  background-color: var(--ghost-white);
 }
 
 .menu__text {
+  font-family: var(--font-poppins);
   font-size: 0.8125rem;
   font-weight: 600;
   line-height: normal;
@@ -16,7 +15,7 @@
 }
 
 .menu__text-span {
-  color: #f7542e;
+  color: var(--portland-orange);
 }
 
 .menu__ul {
@@ -30,10 +29,11 @@
   font-size: 0.8125rem;
   font-weight: 500;
   line-height: normal;
-  color: #9e9e9e;
+  color: var(--spanish-gray);
+  font-family: var(--font-poppins);
 }
 
 .menu__ul li:nth-child(5) {
-  color: #090f31;
+  color: var(--cetacean-blue);
   font-weight: 700;
 }
