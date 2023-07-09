@@ -1,49 +1,134 @@
-import "./App.css";
+import Menu from "./components/Menu";
+
+import "./assets/css/App.css";
 
 function App() {
   return (
-    <>
-      <div className="welcome">
-        <div className="welcome-text">
-          <h1>
-            Welcome to
-            <a href="https://devchallenges.io/" target="_blank">
-              devchallenges.io
-            </a>
-          </h1>
+    <div className="container">
+      <Menu />
 
-          <p>
-            If you have any questions, don't hesitate to ask on Discord. Here
-            are 7 general steps to complete the challenge:
-          </p>
+      <section>
+        <h1>Buttons</h1>
+
+        <div>
+          <div>
+            <span>{"<Button />"}</span>
+            <button>Default</button>
+          </div>
+          <div>
+            <span>&:hover, &:focus</span>
+            <button>Default</button>
+          </div>
         </div>
 
-        <ul>
-          <li>
-            <b>Step 1:</b> Create a new repository on github
-          </li>
-          <li>
-            <b>Step 2:</b> Copy resources, README.md to your repository
-          </li>
-          <li>
-            <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-          </li>
-          <li>
-            <b>Step 4:</b> Complete all user stories
-          </li>
-          <li>
-            <b>Step 5:</b> Update README.md
-          </li>
-          <li>
-            <b>Step 6:</b> Deploy your app and submit your solution
-          </li>
-          <li>
-            <b>Step 7:</b> Share your solution on Discord, Twitter and other
-            platforms to ask for feedback
-          </li>
-        </ul>
-      </div>
-    </>
+        <div>
+          <div>
+            <span>{"<Button variant=”outline” />"}</span>
+            <button>Default</button>
+          </div>
+          <div>
+            <span>&:hover, &:focus</span>
+            <button>Default</button>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <span>{"<Button variant=”text” />"}</span>
+            <button>Default</button>
+          </div>
+          <div>
+            <span>&:hover, &:focus</span>
+            <button>Default</button>
+          </div>
+        </div>
+
+        <div>
+          <span>{"<Button disableShadow />"}</span>
+          <button>Default</button>
+        </div>
+
+        <div>
+          <div>
+            <span>{"<Button disabled />"}</span>
+            <button>Default</button>
+          </div>
+          <div>
+            <span>{"<Button variant=”text” disabled />"}</span>
+            <button>Default</button>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <span>{"<Button startIcon=”local_grocery_store” />"}</span>
+            <button>Default</button>
+          </div>
+          <div>
+            <span>{"<Button endIcon=”local_grocery_store” />"}</span>
+            <button>Default</button>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <span>{"<Button size=”sm” />"}</span>
+            <button>Default</button>
+          </div>
+          <div>
+            <span>{"<Button size=”md” />"}</span>
+            <button>Default</button>
+          </div>
+          <div>
+            <span>{"<Button size=”lg” />"}</span>
+            <button>Default</button>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <div>
+              <span>{"<Button color=”default” />"}</span>
+              <button>Default</button>
+            </div>
+            <div>
+              <span>{"&:hover, &:focus"}</span>
+              <button>Default</button>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <span>{"<Button color=”primary” />"}</span>
+              <button>Default</button>
+            </div>
+            <div>
+              <button>Default</button>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <span>{"<Button color=”secondary” />"}</span>
+              <button>Default</button>
+            </div>
+            <div>
+              <button>Default</button>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <span>{"<Button color=”danger” />"}</span>
+              <button>Default</button>
+            </div>
+            <div>
+              <button>Default</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 
