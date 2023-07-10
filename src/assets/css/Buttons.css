@@ -46,3 +46,11 @@
 .container__buttons__span-color {
   color: #828282;
 }
+
+.btn-size-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn-size-four {
+  grid-template-columns: repeat(4, 1fr);
+}
