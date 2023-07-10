@@ -1,4 +1,4 @@
-import Button from "../components/Button";
+import Input from "../components/Input";
 
 import "../assets/css/Inputs.css";
 
@@ -9,160 +9,165 @@ export default function Inputs() {
         <h1 className="section__input__title">Inputs</h1>
 
         <div className="section__input__container">
-          <div className="container__inputs">
+          <div className="container__inputs input-size-three">
             <div>
-              <span className="container__inputs__span">{"<Button />"}</span>
-              <Button text="Default" className="btn-default" />
+              <span className="container__inputs__span">{"<Input />"}</span>
+              <label>
+                Label
+                <Input />
+              </label>
             </div>
             <div>
-              <span className="container__inputs__span-color">
-                &:hover, &:focus
+              <span className="container__inputs__span-color">&:hover</span>
+              <label>
+                Label
+                <Input />
+              </label>
+            </div>
+            <div>
+              <span className="container__inputs__span-color">&:focus</span>
+              <label>
+                Label
+                <Input />
+              </label>
+            </div>
+          </div>
+
+          <div className="container__inputs input-size-three">
+            <div>
+              <span className="container__inputs__span">
+                {"<Input error />"}
               </span>
-              <Button text="Default" className="btn-default-hover" />
+              <label>
+                Label
+                <Input />
+              </label>
+            </div>
+            <div>
+              <span className="container__inputs__span-color">&:hover</span>
+              <label>
+                Label
+                <Input />
+              </label>
+            </div>
+            <div>
+              <span className="container__inputs__span-color">&:focus</span>
+              <label>
+                Label
+                <Input />
+              </label>
             </div>
           </div>
 
           <div className="container__inputs">
             <div>
               <span className="container__inputs__span">
-                {"<Button variant=”outline” />"}
+                {"<Input disabled />"}
               </span>
-              <Button text="Default" className="btn-outline" />
-            </div>
-            <div>
-              <span className="container__inputs__span-color">
-                &:hover, &:focus
-              </span>
-              <Button text="Default" className="btn-outline-hover" />
+              <label>
+                Label
+                <Input />
+              </label>
             </div>
           </div>
 
           <div className="container__inputs">
             <div>
               <span className="container__inputs__span">
-                {"<Button variant=”text” />"}
+                {"<Input helperText=”Some interesting text” />"}
               </span>
-              <Button text="Default" className="btn-variant-text" />
+              <label>
+                Label
+                <Input />
+              </label>
             </div>
             <div>
-              <span className="container__inputs__span-color">
-                &:hover, &:focus
+              <span className="container__inputs__span">
+                {"<Input helperText=”Some interesting text” error />"}
               </span>
-              <Button text="Default" className="btn-variant-text-hover" />
+              <label>
+                Label
+                <Input />
+              </label>
             </div>
           </div>
 
           <div className="container__inputs">
             <div>
               <span className="container__inputs__span">
-                {"<Button disableShadow />"}
+                {"<Input startIcon />"}
               </span>
-              <Button text="Default" className="btn-disableShadow" />
+
+              <label>
+                Label
+                <Input />
+              </label>
+            </div>
+            <div>
+              <span className="container__inputs__span">
+                {"<Input endIcon />"}
+              </span>
+              <label>
+                Label
+                <Input />
+              </label>
             </div>
           </div>
 
           <div className="container__inputs">
             <div>
               <span className="container__inputs__span">
-                {"<Button disabled />"}
+                {"<Input value=”text” />"}
               </span>
-              <Button text="Default" className="btn-disabled" />
-            </div>
-            <div>
-              <span className="container__inputs__span">
-                {"<Button variant=”text” disabled />"}
-              </span>
-              <Button text="Default" className="btn-disabled-text" />
+              <label>
+                Label
+                <Input />
+              </label>
             </div>
           </div>
 
-          <div className="container__inputs">
+          <div className="container__inputs input-size-three">
             <div>
               <span className="container__inputs__span">
-                {"<Button startIcon=”local_grocery_store” />"}
+                {"<Input size=”sm” />"}
               </span>
-
-              <Button text="Default" iconLeft={true} className="btn-icon" />
+              <label>
+                Label
+                <Input />
+              </label>
             </div>
             <div>
               <span className="container__inputs__span">
-                {"<Button endIcon=”local_grocery_store” />"}
+                {"<Input size=”md” />"}
               </span>
-              <Button text="Default" iconRight={true} className="btn-icon" />
+              <label>
+                Label
+                <Input />
+              </label>
             </div>
           </div>
 
-          <div className="container__inputs btn-size-three">
+          <div className="container__inputs input-size-three">
             <div>
               <span className="container__inputs__span">
-                {"<Button size=”sm” />"}
+                {"<Input fullWidth />"}
               </span>
-              <Button text="Default" className="btn-icon size-sm" />
-            </div>
-            <div>
-              <span className="container__inputs__span">
-                {"<Button size=”md” />"}
-              </span>
-              <Button text="Default" className="btn-icon size-md" />
-            </div>
-            <div>
-              <span className="container__inputs__span">
-                {"<Button size=”lg” />"}
-              </span>
-              <Button text="Default" className="btn-icon size-lg" />
+              <label>
+                Label
+                <Input />
+              </label>
             </div>
           </div>
 
-          <div className="container__inputs btn-size-four">
+          <div className="container__inputs input-size-three">
             <div>
-              <div>
-                <span className="container__inputs__span">
-                  {"<Button color=”default” />"}
-                </span>
-                <Button text="Default" className="btn-default" />
-              </div>
-              <div>
-                <span className="container__inputs__span-color">
-                  &:hover, &:focus
-                </span>
-                <Button text="Default" className="btn-default-hover" />
-              </div>
-            </div>
-
-            <div className="container__inputs">
-              <div>
-                <span className="container__inputs__span">
-                  {"<Button color=”primary” />"}
-                </span>
-                <Button text="Default" className="btn-icon" />
-              </div>
-              <div>
-                <Button text="Default" className="btn-icon btn-icon-hover" />
-              </div>
-            </div>
-
-            <div className="container__inputs">
-              <div>
-                <span className="container__inputs__span">
-                  {"<Button color=”secondary” />"}
-                </span>
-                <Button text="Secondary" className="btn-secondary" />
-              </div>
-              <div>
-                <Button text="Secondary" className="btn-secondary-hover" />
-              </div>
-            </div>
-
-            <div className="container__inputs">
-              <div>
-                <span className="container__inputs__span">
-                  {"<Button color=”danger” />"}
-                </span>
-                <Button text="Default" className="btn-danger" />
-              </div>
-              <div>
-                <Button text="Default" className="btn-danger-hover" />
-              </div>
+              <span className="container__inputs__span">
+                {"<Input multiline row=”4” />"}
+              </span>
+              <label>
+                Label
+                <Input />
+              </label>
             </div>
           </div>
         </div>

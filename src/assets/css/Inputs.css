@@ -27,10 +27,20 @@
   gap: 2rem;
 }
 
-.container__inputs div {
+.container__inputs div,
+.container__inputs div label {
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+
+.container__inputs div label {
+  color: var(--dark-charcoal);
+  font-family: var(--font-noto);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: normal;
+  gap: 0.25rem;
 }
 
 .container__inputs__span,
@@ -43,6 +53,6 @@
   line-height: normal;
 }
 
-.container__inputs__span-color {
-  color: #828282;
+.input-size-three {
+  grid-template-columns: repeat(3, 1fr);
 }

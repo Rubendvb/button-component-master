@@ -1,0 +1,15 @@
+.custom__input {
+  width: 12.5rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #828282;
+  padding: 0.75rem;
+  text-align: start;
+}
+
+.custom__input::placeholder {
+  font-family: var(--font-noto);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: normal;
+}
