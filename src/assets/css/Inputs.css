@@ -1,0 +1,58 @@
+.containerInput {
+  display: flex;
+}
+
+.section__input {
+  padding: 3rem 0 0 5rem;
+}
+
+.section__input__title {
+  color: #4f4f4f;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  line-height: normal;
+  font-size: 1.5rem;
+  margin: 0 0 1.75rem;
+}
+
+.section__input__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container__inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.container__inputs div,
+.container__inputs div label {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.container__inputs div label {
+  color: var(--dark-charcoal);
+  font-family: var(--font-noto);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: normal;
+  gap: 0.25rem;
+}
+
+.container__inputs__span,
+.container__inputs__span-color {
+  margin-bottom: 1rem;
+  color: var(--dark-charcoal);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: var(--font-ubuntu);
+  line-height: normal;
+}
+
+.input-size-three {
+  grid-template-columns: repeat(3, 1fr);
+}

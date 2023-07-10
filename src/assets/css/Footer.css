@@ -1,0 +1,26 @@
+.footer {
+  margin: 3.25rem 0;
+  padding-left: 5rem;
+}
+
+.footer__text {
+  font-family: var(--font-ubuntu);
+  color: #828282;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 0.75rem;
+}
+
+.footer__subtext {
+  margin-top: 2.12rem;
+  color: #a9a9a9;
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  line-height: normal;
+  font-size: 0.875rem;
+}
+
+.footer__subtext-span {
+  font-weight: bold;
+  text-decoration: underline;
+}
