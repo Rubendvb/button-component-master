@@ -5,6 +5,10 @@
   background-color: var(--ghost-white);
 }
 
+.menu a {
+  text-decoration: none;
+}
+
 .menu__text {
   font-family: var(--font-poppins);
   font-size: 0.8125rem;
@@ -26,14 +30,18 @@
 
 .menu__ul li {
   list-style: none;
+}
+
+.menu__ul__a {
   font-size: 0.8125rem;
   font-weight: 500;
   line-height: normal;
   color: var(--spanish-gray);
   font-family: var(--font-poppins);
+  text-decoration: none;
 }
 
-.menu__ul li:nth-child(5) {
+.active {
   color: var(--cetacean-blue);
   font-weight: 700;
 }
