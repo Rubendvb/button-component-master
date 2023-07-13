@@ -21,14 +21,14 @@ export default function Inputs() {
               <span className="container__inputs__span-color">&:hover</span>
               <label>
                 Label
-                <Input />
+                <Input className="border-dark-gray" />
               </label>
             </div>
             <div>
               <span className="container__inputs__span-color">&:focus</span>
-              <label>
+              <label className="container__inputs__label-color">
                 Label
-                <Input />
+                <Input className="border-blue" />
               </label>
             </div>
           </div>
@@ -38,23 +38,23 @@ export default function Inputs() {
               <span className="container__inputs__span">
                 {"<Input error />"}
               </span>
-              <label>
+              <label className="container__inputs__label-colorError">
                 Label
-                <Input />
+                <Input className="border-error" />
               </label>
             </div>
             <div>
               <span className="container__inputs__span-color">&:hover</span>
               <label>
                 Label
-                <Input />
+                <Input className="border-dark-gray" />
               </label>
             </div>
             <div>
               <span className="container__inputs__span-color">&:focus</span>
-              <label>
+              <label className="container__inputs__label-colorError">
                 Label
-                <Input />
+                <Input className="border-error" />
               </label>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function Inputs() {
               </span>
               <label>
                 Label
-                <Input />
+                <Input className="input-disabled" />
               </label>
             </div>
           </div>
@@ -80,15 +80,21 @@ export default function Inputs() {
                 Label
                 <Input />
               </label>
+              <span className="container__inputs__span-text">
+                Some interesting text
+              </span>
             </div>
             <div>
               <span className="container__inputs__span">
                 {"<Input helperText=”Some interesting text” error />"}
               </span>
-              <label>
+              <label className="container__inputs__label-colorError">
                 Label
-                <Input />
+                <Input className="border-error" />
               </label>
+              <span className="container__inputs__span-text container__inputs__label-colorError">
+                Some interesting text
+              </span>
             </div>
           </div>
 
@@ -100,7 +106,7 @@ export default function Inputs() {
 
               <label>
                 Label
-                <Input />
+                <Input iconLeft={true} className="placeholder-icon" />
               </label>
             </div>
             <div>
@@ -109,7 +115,7 @@ export default function Inputs() {
               </span>
               <label>
                 Label
-                <Input />
+                <Input iconRight={true} />
               </label>
             </div>
           </div>
