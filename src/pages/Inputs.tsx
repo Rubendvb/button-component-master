@@ -127,7 +127,7 @@ export default function Inputs() {
               </span>
               <label>
                 Label
-                <Input />
+                <Input valueExist={true} />
               </label>
             </div>
           </div>

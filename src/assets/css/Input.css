@@ -10,9 +10,13 @@
 
 .custom__input::placeholder {
   font-family: var(--font-noto);
-  font-size: 0.875rem;
   font-weight: 500;
   line-height: normal;
+}
+
+.custom__input {
+  color: var(--dark-charcoal);
+  font-size: 0.875rem;
 }
 
 .containerInput {
