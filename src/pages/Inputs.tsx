@@ -132,14 +132,14 @@ export default function Inputs() {
             </div>
           </div>
 
-          <div className="container__inputs input-size-three">
+          <div className="container__inputs">
             <div>
               <span className="container__inputs__span">
                 {"<Input size=”sm” />"}
               </span>
               <label>
                 Label
-                <Input />
+                <Input className="input-height" />
               </label>
             </div>
             <div>
