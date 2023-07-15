@@ -5,9 +5,15 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   className?: string | undefined;
   iconLeft?: boolean;
   iconRight?: boolean;
+  valueExist?: boolean;
 }
 
-export default function Input({ className, iconLeft, iconRight }: InputProps) {
+export default function Input({
+  className,
+  iconLeft,
+  iconRight,
+  valueExist,
+}: InputProps) {
   const combinedInputClassName = `custom__input ${className || ""}`;
 
   return (
@@ -24,6 +30,7 @@ export default function Input({ className, iconLeft, iconRight }: InputProps) {
         className={combinedInputClassName}
         type="text"
         placeholder="Placeholder"
+        value={valueExist ? "Text" : ""}
       />
     </div>
   );

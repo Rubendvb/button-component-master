@@ -127,19 +127,19 @@ export default function Inputs() {
               </span>
               <label>
                 Label
-                <Input />
+                <Input valueExist={true} />
               </label>
             </div>
           </div>
 
-          <div className="container__inputs input-size-three">
+          <div className="container__inputs">
             <div>
               <span className="container__inputs__span">
                 {"<Input size=”sm” />"}
               </span>
               <label>
                 Label
-                <Input />
+                <Input className="input-height" />
               </label>
             </div>
             <div>
@@ -153,14 +153,14 @@ export default function Inputs() {
             </div>
           </div>
 
-          <div className="container__inputs input-size-three">
+          <div className="container__inputs input-container-width-full">
             <div>
               <span className="container__inputs__span">
                 {"<Input fullWidth />"}
               </span>
               <label>
                 Label
-                <Input />
+                <Input valueExist={true} className="input-width-full" />
               </label>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function Inputs() {
               </span>
               <label>
                 Label
-                <Input />
+                <Input className="input-textarea" />
               </label>
             </div>
           </div>

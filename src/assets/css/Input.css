@@ -10,9 +10,13 @@
 
 .custom__input::placeholder {
   font-family: var(--font-noto);
-  font-size: 0.875rem;
   font-weight: 500;
   line-height: normal;
+}
+
+.custom__input {
+  color: var(--dark-charcoal);
+  font-size: 0.875rem;
 }
 
 .containerInput {
@@ -40,4 +44,19 @@
 
 .icon-lock {
   right: 0%;
+}
+
+.input-height {
+  height: 2.5rem;
+}
+
+.input-container-width-full {
+  display: inline-block !important;
+}
+
+.input-width-full {
+  width: 64rem;
+}
+.input-textarea {
+  height: 9.375rem;
 }
